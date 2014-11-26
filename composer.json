@@ -1,0 +1,37 @@
+{
+    "name": "egils/CacheBundle",
+    "description": "Egils\\Cache integration for Symfony2",
+    "keywords": ["egils/cache", "Symfony2", "bundle", "psr-6"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name":   "Egidijus Lukauskas",
+            "email":  "egils.ps@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "symfony/framework-bundle" : ">=2.3",
+        "egils/cache": "1.0.*@dev",
+        "psr/cache": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Egils\\Bundle\\CacheBundle\\": "Bundle"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Egils\\Tests\\CacheBundle\\": "Tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability" : "dev"
+}
