@@ -1,5 +1,5 @@
 {
-    "name": "egils/CacheBundle",
+    "name": "egils/cache-bundle",
     "description": "Egils\\Cache integration for Symfony2",
     "keywords": ["egils/cache", "Symfony2", "bundle", "psr-6"],
     "license": "MIT",
