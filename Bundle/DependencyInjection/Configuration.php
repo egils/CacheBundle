@@ -23,6 +23,27 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('egils_cache');
 
+        $rootNode
+            ->children()
+                ->arrayNode('doctrine_providers')
+                    ->prototype('scalar')->end()
+                ->end()
+
+                ->arrayNode('adapters')
+                    ->prototype('array')
+                        ->children()
+                            ->scalarNode('service')->defaultNull()->end()
+                            ->scalarNode('class')->defaultNull()->end()
+                        ->end()
+                    ->end()
+                ->end()
+
+                ->scalarNode('default')
+                    ->cannotBeEmpty()
+                    ->defaultNull()
+                ->end()
+            ->end();
+
         return $treeBuilder;
     }
 }
