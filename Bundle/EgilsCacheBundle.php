@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the Egils\Cache package.
+ * This file is part of the Egils\CacheBundle package.
  *
  * (c) Egidijus Lukauskas <egils.ps@gmail.com>
  *
@@ -14,5 +14,4 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class EgilsCacheBundle extends Bundle
 {
-
 }

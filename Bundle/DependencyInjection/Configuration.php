@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the Egils\Cache package.
+ * This file is part of the Egils\CacheBundle package.
  *
  * (c) Egidijus Lukauskas <egils.ps@gmail.com>
  *
@@ -15,9 +15,6 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 class Configuration implements ConfigurationInterface
 {
-    /**
-     * {@inheritdoc}
-     */
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();

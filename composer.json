@@ -18,6 +18,9 @@
     "require-dev": {
         "phpunit/phpunit": "*"
     },
+    "suggest": {
+        "doctrine/doctrine-cache-bundle": "Doctrine/Cache integration for Symfony2"
+    },
     "autoload": {
         "psr-4": {
             "Egils\\Bundle\\CacheBundle\\": "Bundle"

@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the Egils\Cache package.
+ * This file is part of the Egils\CacheBundle package.
  *
  * (c) Egidijus Lukauskas <egils.ps@gmail.com>
  *
@@ -24,9 +24,6 @@ class EgilsCacheExtension extends Extension
     /** @var Definition */
     private $cacheManagerDefinition;
 
-    /**
-     * {@inheritdoc}
-     */
     public function load(array $config, ContainerBuilder $container)
     {
         $configuration = new Configuration();
